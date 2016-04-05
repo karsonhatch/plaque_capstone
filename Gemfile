@@ -19,14 +19,12 @@ gem 'materialize-sass'
 gem 'devise'
 gem 'paperclip'
 
+gem 'react-rails'
+
 gem 'rspec-rails', '~> 3.0'
 gem 'omniauth-facebook', '~> 3.0.0'
+gem 'passenger', ">= 5.0.25", require: "phusion_passenger/rack_handler"
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -46,7 +44,6 @@ group :development, :test do
 end
 
 group :production do
-	gem 'passenger', ">= 5.0.25", require: "phusion_passenger/rack_handler"
 	gem 'rails_12factor'
 end
 
